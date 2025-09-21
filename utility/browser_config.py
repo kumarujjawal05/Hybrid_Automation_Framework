@@ -27,14 +27,14 @@ def get_browser_version_windows(registry_path):
         return None
 
 def get_chrome_version_windows():
-    return get_browser_version_windows("HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Google\Chrome\Application")
+    return get_browser_version_windows("HKEY_LOCAL_MACHINE/SOFTWARE/Wow6432Node/Google/Chrome/Application")
 
 def get_edge_version_windows():
-    return get_browser_version_windows("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\BLBeacon")
+    return get_browser_version_windows("HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Edge/BLBeacon")
 
 def get_chrome_version_mac():
     try:
-        command = "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version"
+        command = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --version"
         process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         stdout, stderr = process.communicate()
         if process.returncode == 0:
@@ -48,7 +48,7 @@ def get_chrome_version_mac():
 
 def get_edge_version_mac():
     try:
-        command = "/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge --version"
+        command = "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --version"
         process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         stdout, stderr = process.communicate()
         if process.returncode == 0:
