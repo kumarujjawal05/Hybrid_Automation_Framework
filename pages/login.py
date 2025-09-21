@@ -10,10 +10,10 @@ class OrangeHRMLoginPage(WebDriverHelper):
         super().__init__(driver)
 
 
-    def login(self, url, username, password):
+    def login(self, username, password):
 
         try:
-            self.driver.get(url)
+            
 
             enter_username = self.wait_for_element_to_be_visible((By.XPATH, login_locators["username"]))
             enter_username.send_keys(username)
