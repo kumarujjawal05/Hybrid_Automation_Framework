@@ -1,23 +1,26 @@
 import psycopg2
 
 
-def get_users_from_db():
+def get_users_from_db(valid=None):
     users = []
     try:
         conn = psycopg2.connect(
             host="localhost",
             user="postgres",
             password="1234",
-            dbname="user_db",
+            dbname="saucedemo_db",
             port="5432"
         )
         print("Postgres Connection Established")
 
         cursor = conn.cursor()
-        cursor.execute('SELECT username, password FROM "users";')  # fetch only needed cols
-        users = cursor.fetchall()
+        if valid is None:
+            cursor.execute("SELECT username, password FROM users")
+        else:
+            cursor.execute("SELECT username, password FROM users WHERE is_valid = %s", (valid,))        
+            users = cursor.fetchall()
 
-        print("Data retrieved from the 'user' table:")
+        print("Data retrieved from the 'users' table:")
         for row in users:
             print(row)
 

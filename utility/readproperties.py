@@ -13,11 +13,4 @@ class ReadConfig:
     def get_application_url():
         url = config.get('common_info', 'url')
         return url
-    @staticmethod
-    def get_username():
-        username = config.get('common_info', 'username')
-        return username
-    @staticmethod
-    def get_password():
-        password = config.get('common_info', 'password')
-        return password
+   
