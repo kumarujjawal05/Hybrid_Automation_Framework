@@ -14,7 +14,7 @@ def get_users_from_db():
         print("Postgres Connection Established")
 
         cursor = conn.cursor()
-        cursor.execute('SELECT username, password FROM "user";')  # fetch only needed cols
+        cursor.execute('SELECT username, password FROM "users";')  # fetch only needed cols
         users = cursor.fetchall()
 
         print("Data retrieved from the 'user' table:")
