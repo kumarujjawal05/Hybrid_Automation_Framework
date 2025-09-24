@@ -40,6 +40,10 @@ class TestLogin:
         lp = SauceDemoLoginPage(driver)
         lp.login(username, password)
 
+        # alert = driver.switch_to.alert
+        # alert.accept()
+        # print(alert.text)
+
         wait = WebDriverWait(driver, 5)
         wait.until(EC.url_contains("inventory"))
 

@@ -24,5 +24,6 @@ class SauceDemoLoginPage(WebDriverHelper):
             click_login_button = self.wait_for_element_to_be_clickable((By.ID, login_locators["login_button"]))
             click_login_button.click()
 
+
         except Exception as e:
             raise AssertionError(f"Failed to log in: {str(e)}")
