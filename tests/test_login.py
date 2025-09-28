@@ -31,6 +31,7 @@ class TestLogin:
         pytest.fail(f"Login failed for {username}") 
         print(f"Login failed for {username}: {error_element.text}")
 
+    @pytest.mark.order(1)
     @pytest.mark.parametrize("username,password", get_users_from_db(valid=True))
     def test_validLogin(self, setup, username, password):
         url = ReadConfig().get_application_url()
@@ -39,10 +40,6 @@ class TestLogin:
 
         lp = SauceDemoLoginPage(driver)
         lp.login(username, password)
-
-        # alert = driver.switch_to.alert
-        # alert.accept()
-        # print(alert.text)
 
         wait = WebDriverWait(driver, 5)
         wait.until(EC.url_contains("inventory"))

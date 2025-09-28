@@ -39,9 +39,6 @@ def get_users_from_db(valid=None):
 
 def get_products_from_db():
 
-    """
-        Fetch product names from the products table.
-        """
     products = []
 
     try:
@@ -63,5 +60,26 @@ def get_products_from_db():
         print("Error fetching products:", e)
 
     return products
+
+
+def get_address_from_db(id):
+    address = []
+
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+
+        cur.execute("SELECT first_name, last_name, zipcode FROM addresses WHERE id=%s", (id,))
+        row = cur.fetchone()
+
+        if row:
+            data = row  # (first_name, last_name, zipcode)
+        cur.close()
+        conn.close()
+        return data
+    except Exception as e:
+        print(f"Error fetching address from DB: {e}")
+        return None
+
 
   

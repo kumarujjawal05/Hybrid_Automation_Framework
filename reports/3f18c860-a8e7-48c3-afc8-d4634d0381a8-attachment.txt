@@ -1,0 +1,29 @@
+Launching Chrome Browser.........
+Products retrieved from DB: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+Products from DB: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+UI Product: Sauce Labs Backpack
+Found product in DB: Sauce Labs Backpack
+Added to cart: Sauce Labs Backpack
+UI Product: Sauce Labs Bike Light
+Found product in DB: Sauce Labs Bike Light
+Added to cart: Sauce Labs Bike Light
+UI Product: Sauce Labs Bolt T-Shirt
+Found product in DB: Sauce Labs Bolt T-Shirt
+Added to cart: Sauce Labs Bolt T-Shirt
+UI Product: Sauce Labs Fleece Jacket
+Found product in DB: Sauce Labs Fleece Jacket
+Added to cart: Sauce Labs Fleece Jacket
+UI Product: Sauce Labs Onesie
+Found product in DB: Sauce Labs Onesie
+Added to cart: Sauce Labs Onesie
+UI Product: Test.allTheThings() T-Shirt (Red)
+Found product in DB: Test.allTheThings() T-Shirt (Red)
+Added to cart: Test.allTheThings() T-Shirt (Red)
+Finished adding all DB products to cart.
+Cart Items from UI: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+Products retrieved from DB: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+Cart Items from UI: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+DB Products: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+UI Cart Products: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+All DB products successfully verified in Cart!
+Closing Browser.........

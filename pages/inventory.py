@@ -1,3 +1,4 @@
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from utility.commonfile import WebDriverHelper
@@ -25,11 +26,12 @@ class SauceDemooInventoryPage(WebDriverHelper):
                 # Check if product is in DB list
                 if product_name in db_product_list:
                     print(f"Found product in DB: {product_name}")
-
+                    wait = WebDriverWait(self.driver, 15)
                     click_add_to_cart = self.wait_for_element_to_be_clickable((By.XPATH, inventory_locators["add_to_cart"]))
+                    time.sleep(4)
                     click_add_to_cart.click()
-                    wait = WebDriverWait(self.driver, 5)
-                    print(f"🛒 Added to cart: {product_name}")
+                
+                    print(f"Added to cart: {product_name}")
             print("Finished adding all DB products to cart.")
 
 
