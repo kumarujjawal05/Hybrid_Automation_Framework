@@ -110,7 +110,6 @@ Future Improvements
 ---------------------------------
 - Integrate CI/CD (GitHub Actions / Jenkins)
 - Dockerize the framework
-- Parallel execution with pytest-xdist
 
 ---------------------------------
 Author
