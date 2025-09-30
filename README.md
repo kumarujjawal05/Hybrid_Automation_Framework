@@ -24,8 +24,7 @@ Features
 Setup & Installation
 ---------------------------------
 1. Clone the Repository
-   git clone https://github.com/your-username/saucedemo-automation.git
-   cd saucedemo-automation
+   git clone https://github.com/your-username/Hybrid_Automation_Framework.git
 
 2. Create & Activate Virtual Environment
    python3 -m venv .venv
